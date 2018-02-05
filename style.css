@@ -1,0 +1,76 @@
+.root {
+-fx-background-color:#2B2B2B;
+    -fx-font-family:"Nirmala UI";
+	-fx-font-size:10px;
+}
+.button {
+-fx-background-color:#3C3F41;
+    -fx-font-size:20px;
+	-fx-background-radius:50%;
+	-fx-border-radius: 100%;
+	-fx-padding:0px;
+}
+.button:focused {
+-fx-background-color:#ffffff;
+    -fx-font-size:20px;
+	-fx-background-radius:50%;
+	-fx-border-radius: 100%;
+	-fx-padding:0px;
+}
+
+#bar {
+-fx-background-color:#494A4C;
+    -fx-font-family:"arial";
+    -fx-font-weight:bold;
+    -fx-background-cursor: pointer;
+}
+#help, #about {
+-fx-background-color:#8A8A8A;
+    -fx-font-family:"impact";
+    -fx-font-weight:bold;
+}
+
+#Fields {
+-fx-background-color:#494A4C;
+-fx-text-fill:#8A8A8A;
+-fx-font-size:20px;
+}
+
+#btn0, #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8, #btn9 {
+-fx-background-color:#8A8A8A;
+    -fx-font-size:30px;
+    -fx-font-family:"Times New Roman";
+}
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover, #btn6:hover, #btn7:hover, #btn8:hover, #btn9:hover {
+-fx-background-color:#555555;
+-fx-text-fill:#8A8A8A;
+}
+
+#Cbtn, #ClearBtn, #ChangeSignBtn, #DoubleBtn, #btnWasd, #CEbtn {
+-fx-background-color:#545454;
+}
+#CEbtn:hover, #Cbtn:hover, #ClearBtn:hover, #ChangeSignBtn:hover, #DoubleBtn:hover, #btnWasd:hover, #CEbtn:hove{
+-fx-background-color:#cccccc;
+}
+
+#ProcentBtn, #JustVBtn, #v2Btn, #v3Btn {
+-fx-background-color:#313335;
+-fx-text-fill:#6A6A6A;
+}
+#ProcentBtn:hover, #JustVBtn:hover, #v2Btn:hover, #v3Btn:hover {
+-fx-background-color:#3133360;
+-fx-text-fill:#6A6A6A;
+}
+
+#minusBtn, #plusBtn, #divideBtn, #multiplicationBtn {
+-fx-text-fill:#8A8A8A
+}
+
+#equallyBtn {
+-fx-background-color:#34ECA7
+}
+
+#btnWasd {
+	-fx-font-size:20px;
+}
+

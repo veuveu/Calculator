@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleHelp="2282" accessibleRoleDescription="2283" accessibleText="228" focusTraversable="true" prefHeight="300.0" prefWidth="290.0" xmlns:a="http://javafx.com/javafx/9.0.1" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.Controller">
+   <children>
+      <Pane focusTraversable="true" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </padding>
+         <children>
+            <Button fx:id="ChangeSignBtn" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="+/-">
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.5" surfaceScale="2.56">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="btn0" layoutX="77.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000cb" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="btnWasd" layoutX="144.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text=",">
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.5" surfaceScale="2.56">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="equallyBtn" layoutX="210.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="=">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Glow level="0.0" />
+               </effect></Button>
+            <Button fx:id="btn2" layoutX="77.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000cc" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="btn1" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000cb" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="btn3" layoutX="144.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000cd" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="btn5" layoutX="77.0" layoutY="264.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="5">
+               <effect>
+                  <DropShadow color="#000000cc" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btn4" layoutX="10.0" layoutY="264.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000cc" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="btn6" layoutX="144.0" layoutY="264.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000b7" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="plusBtn" layoutX="210.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="+" />
+            <Button fx:id="btn9" layoutX="144.0" layoutY="204.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="9">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.46190476190476193" focusAngle="-110.44" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.49484536082474223" />
+                        <Stop color="RED" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000cc" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="btn8" layoutX="77.0" layoutY="204.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="8">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#000000cc" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="btn7" layoutX="10.0" layoutY="204.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="7">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#000000cd" height="50.0" radius="24.5" spread="0.5" width="50.0" />
+               </effect></Button>
+            <Button fx:id="minusBtn" layoutX="210.0" layoutY="264.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="-" />
+            <Button fx:id="ProcentBtn" layoutX="10.0" layoutY="83.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="\%">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow height="64.05250000000001" radius="33.013125" width="70.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="JustVBtn" layoutX="77.0" layoutY="83.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="^">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow radius="22.25" width="70.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="multiplicationBtn" layoutX="210.0" layoutY="204.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="x" />
+            <Button fx:id="ClearBtn" layoutX="144.0" layoutY="144.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="&lt;-">
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.5" surfaceScale="2.56">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="v2Btn" layoutX="144.0" layoutY="83.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="^2">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow radius="22.25" width="70.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="v3Btn" layoutX="210.0" layoutY="83.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="^3">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow radius="22.25" width="70.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="divideBtn" layoutX="210.0" layoutY="144.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="/" />
+            <Button fx:id="Cbtn" layoutX="77.0" layoutY="144.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" text="C">
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.5" surfaceScale="2.56">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <MenuBar fx:id="bar" layoutX="-9.0" layoutY="-11.0" prefHeight="23.0" prefWidth="292.0">
+              <menus>
+                <Menu fx:id="help" text="Help">
+                  <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" onAction="#about" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextField fx:id="Fields" editable="false" layoutX="25.0" layoutY="25.0" mouseTransparent="true" prefHeight="55.0" prefWidth="224.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="50.0" radius="24.5" spread="0.2" width="50.0" />
+               </effect>
+            </TextField>
+            <Separator layoutX="27.0" layoutY="80.0" opacity="0.41" prefHeight="6.0" prefWidth="224.0">
+               <effect>
+                  <BoxBlur height="0.0" iterations="2" width="57.68" />
+               </effect>
+            </Separator>
+            <Button fx:id="CEbtn" layoutX="10.0" layoutY="144.0" mnemonicParsing="false" onAction="#initialize" prefHeight="50.0" prefWidth="56.0" text="CE">
+               <font>
+                  <Font size="6.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.5" surfaceScale="2.56">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="150.0" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <!--<TextArea fx:id="Field" layoutX="33.0" prefHeight="81.0" prefWidth="200.0" />!-->
+         </children>
+         <effect>
+            <BoxBlur height="0.0" width="0.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets bottom="100.0" />
+         </opaqueInsets>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="7.0" right="5.0" top="10.0" />
+   </padding>
+</AnchorPane>
